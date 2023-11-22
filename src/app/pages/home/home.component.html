@@ -39,9 +39,10 @@
   <h2>Nossos coletores</h2>
   <div class="recycles-cards">
     <app-recycle-card
-      name="Descartadora Eletro"
-      distance="12"
-      imageUrl="../../../assets/Frame12.jpg"
+      *ngFor="let collector of collectors"
+      [name]="collector.name"
+      [distance]="collector.distance"
+      [imageUrl]="collector.imgUrl"
     />
   </div>
 </section>
