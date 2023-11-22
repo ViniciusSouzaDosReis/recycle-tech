@@ -7,6 +7,7 @@
   --color-base-yellow: #dbac2c;
   --color-base-yellow-dark: #c47f17;
   --color-product-green-light: #00b37e;
+  --color-product-green-dark: #00875F;
 }
 
 * {
@@ -25,6 +26,16 @@ body {
   height: 100%;
 }
 
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: var(--color-base-gray1);
+}
+
+html,
+body {
+  height: 100%;
+}
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
