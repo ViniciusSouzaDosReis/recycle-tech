@@ -1,13 +1,16 @@
 :root {
   --color-base-gray1: #121214;
   --color-base-gray2: #202024;
+  --color-base-gray3: #29292e;
+  --color-base-gray4: #323238;
   --color-base-gray5: #7c7c8a;
   --color-base-gray6: #c4c4cc;
   --color-base-text: #574f4d;
+  --color-base-label: #8d8686;
   --color-base-yellow: #dbac2c;
   --color-base-yellow-dark: #c47f17;
   --color-product-green-light: #00b37e;
-  --color-product-green-dark: #00875F;
+  --color-product-green-dark: #00875f;
 }
 
 * {
