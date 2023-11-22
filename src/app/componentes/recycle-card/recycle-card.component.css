@@ -1,0 +1,67 @@
+.recycle-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+.recycle-image {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40px;
+  width: 14rem;
+  height: 9rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  :is(img) {
+    width: 100%;
+  }
+}
+
+strong {
+  color: white;
+  font-family: "Baloo 2";
+  font-size: 1.25rem;
+  line-height: 160%;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  :is(p) {
+    font-size: 0.75rem;
+    color: var(--color-base-gray5);
+    line-height: 160%;
+    margin: 0;
+    :is(span) {
+      color: var(--color-product-green-light);
+    }
+  }
+
+  :is(button) {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    background-color: var(--color-product-green-light);
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--color-product-green-dark);
+    }
+    :is(span) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.recycle-card-info {
+  width: 15.6rem;
+  padding: 3rem 0.75rem 0.5rem 0.625rem;
+  background-color: var(--color-base-gray2);
+  border-radius: 0.5rem;
+}
