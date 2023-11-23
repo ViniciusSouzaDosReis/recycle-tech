@@ -55,10 +55,11 @@ input {
   padding: 0.75rem;
   border: 1px solid var(--color-base-gray4);
   background: var(--color-base-gray3);
-  color: var(--color-base-text);
-  :is(::placeholder) {
-    color: var(--color-base-label);
-  }
+  color: var(--color-base-gray6);
+}
+
+input::placeholder {
+  color: var(--color-base-label);
 }
 
 .two-inputs {
@@ -91,7 +92,12 @@ button {
   color: white;
   font-weight: 700;
   cursor: pointer;
-  :is(&:hover){
+  :is(&:hover) {
     background-color: var(--color-product-green-dark);
+  }
+
+  :is(&[data-disabled="true"]) {
+    background-color: var(--color-base-gray4);
+    cursor: not-allowed;
   }
 }

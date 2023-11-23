@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatIconModule } from '@angular/material/icon';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,8 +12,20 @@ import { ScheduleCollectionComponent } from './pages/schedule-collection/schedul
 import { ConfirmCollectionComponent } from './pages/confirm-collection/confirm-collection.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, RecycleCardComponent, ScheduleCollectionComponent, ConfirmCollectionComponent],
-  imports: [BrowserModule, AppRoutingModule, MatIconModule, HttpClientModule],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    RecycleCardComponent,
+    ScheduleCollectionComponent,
+    ConfirmCollectionComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MatIconModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

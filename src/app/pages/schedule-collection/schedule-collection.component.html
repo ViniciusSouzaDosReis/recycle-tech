@@ -8,19 +8,53 @@
         <p>Informe o endereço onde deseja a retirada do seu lixo</p>
       </div>
     </div>
-    <form action="">
-      <input type="text" placeholder="CEP" />
-      <input type="text" placeholder="Rua" />
+    <form [formGroup]="scheduleForm">
+      <input
+        [formControl]="scheduleForm.controls['cep']"
+        type="text"
+        placeholder="CEP"
+      />
+      <input
+        [formControl]="scheduleForm.controls['address']"
+        type="text"
+        placeholder="Rua"
+      />
       <div class="two-inputs">
-        <input type="text" placeholder="Número" />
-        <input type="text" placeholder="Complemento" />
+        <input
+          [formControl]="scheduleForm.controls['number']"
+          type="text"
+          placeholder="Número"
+        />
+        <input
+          [formControl]="scheduleForm.controls['complement']"
+          type="text"
+          placeholder="Complemento"
+        />
       </div>
       <div class="tree-inputs">
-        <input type="text" placeholder="Bairro" />
-        <input type="text" placeholder="Cidade" />
-        <input type="text" placeholder="UF" />
+        <input
+          [formControl]="scheduleForm.controls['neighborhood']"
+          type="text"
+          placeholder="Bairro"
+        />
+        <input
+          [formControl]="scheduleForm.controls['city']"
+          type="text"
+          placeholder="Cidade"
+        />
+        <input
+          [formControl]="scheduleForm.controls['state']"
+          type="text"
+          placeholder="UF"
+        />
       </div>
     </form>
   </div>
-  <button>CONFIRMAR COLETA</button>
+  <button
+    [disabled]="buttonDisabled"
+    [attr.data-disabled]="buttonDisabled"
+    (click)="onClick()"
+  >
+    CONFIRMAR COLETA
+  </button>
 </section>

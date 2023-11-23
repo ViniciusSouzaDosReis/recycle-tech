@@ -16,7 +16,7 @@ const routes: Routes = [
     canActivate: [authenticatedScheduleGuard],
   },
   {
-    path: 'confirmar-coleta',
+    path: 'agendar-coleta/confirmacao',
     component: ConfirmCollectionComponent,
   },
 ];
