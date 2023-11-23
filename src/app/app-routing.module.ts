@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { ScheduleCollectionComponent } from './pages/schedule-collection/schedule-collection.component';
 import { ConfirmCollectionComponent } from './pages/confirm-collection/confirm-collection.component';
+import { authenticatedScheduleGuard } from './services/guards/authenticated-schedule.guard';
 
 const routes: Routes = [
   {
@@ -12,6 +13,7 @@ const routes: Routes = [
   {
     path: 'agendar-coleta',
     component: ScheduleCollectionComponent,
+    canActivate: [authenticatedScheduleGuard],
   },
   {
     path: 'confirmar-coleta',
